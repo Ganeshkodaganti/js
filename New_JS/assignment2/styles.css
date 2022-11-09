@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.item {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lefthand {
+    /* width: 50%; */
+    background-color: rgb(67, 39, 67);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0 7.5%;
+}
+
+.header {
+    color: white;
+    padding-left: 20%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.picture {
+    position: relative;
+    padding-left: 10%;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(221, 104, 50);
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    margin-top: 30px;
+    align-items: center;
+    z-index: 1;
+}
+
+.img1 {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 5%;
+    z-index: 3;
+    left: 16%;
+}
+
+.img2 {
+    position: absolute;
+    width: 47%;
+    height: 85%;
+    z-index: 2;
+    top: 15%;
+    left: 44%;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.google,
+.apple {
+    width: 28%;
+    margin-top: 7%;
+}
+
+.google {
+    padding: 10px;
+}
+
+.apple {
+    padding: 25px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    box-shadow: 0 0 1px solid grey;
+    background-color: white;
+}
+
+.icon {
+    flex-basis: 15%;
+    display: inline-block;
+    text-align: center;
+}

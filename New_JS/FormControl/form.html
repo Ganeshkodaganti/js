@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="my">
+        <input name="one" value="1">
+        <input name="two" value="2">
+    </form>
+
+    <script>
+        // get the form
+        let form = document.forms.my; // <form name="my"> element
+
+        // get the element
+        let elem0 = form.elements.one; // <input name="one"> element
+        let elem1 = form.elements.two; // <input name="two"> element
+
+        console.log(elem0.value); // 1
+        console.log(elem1.value); // 1
+    </script>
+</body>
+
+</html>

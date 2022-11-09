@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para {
+            width: 95vw;
+            height: 150px;
+            overflow: scroll;
+            border: 1px solid red;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>BUBBLING</h2>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3">
+
+            </div>
+        </div>
+    </div>
+    <h2>getElementById</h2>
+    ENTER COLOR :<input id="input1" placeholder="enter any color " type="password">
+
+    <button onclick="func4()">CHANGE MY BG</button>
+
+    <h2>MOUSE EVENTS (over and out)</h2>
+    <div onmouseover="func5()" onmouseout="func6()" id="div4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi doloremque, ipsam quasi sunt accusamus a explicabo recusandae nemo porro quo, iusto culpa in quibusdam quidem vitae at quod, reprehenderit debitis.
+        <div id="div6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod ad explicabo maxime reprehenderit natus vitae possimus deleniti ratione asperiores a voluptates perferendis quis magnam, ipsum excepturi placeat esse recusandae!</div>
+    </div>
+
+    <h2>MOUSE EVENTS (enter and leave)</h2>
+    <div onmouseenter="func7()" onmouseleave="func8()" id="div5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi doloremque, ipsam quasi sunt accusamus a explicabo recusandae nemo porro quo, iusto culpa in quibusdam quidem vitae at quod, reprehenderit debitis.
+        <div id="div7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus hic repellendus eligendi atque officia dolorum esse rem tempora deleniti doloribus illo, corrupti temporibus reiciendis quam sit ut enim. Architecto, quas. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, distinctio. Commodi sapiente minus incidunt eligendi, quos amet. Officia sit tempore consequatur amet porro qui voluptatum hic blanditiis
+            atque quis! Impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo rem minima distinctio at iure accusantium. Voluptatum est modi aspernatur voluptates reiciendis quod blanditiis inventore repellendus voluptatem, autem
+            numquam corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sapiente architecto excepturi nulla nam totam sunt sit provident impedit eveniet unde? Dolorum sit, pariatur quasi ipsam incidunt a modi accusantium.
+
+        </div>
+    </div>
+
+    <h2>ON SCROLL</h2>
+    <p id="para" onscroll="fun9()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, explicabo at necessitatibus expedita facilis aliquam voluptatem. Quia tempore consequuntur, itaque quod incidunt iste recusandae, non repellendus, libero dolore magnam ullam! Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Ducimus consequatur voluptates totam exercitationem perspiciatis cum amet tenetur laudantium, illum, praesentium, provident inventore quia rem consequuntur a facere veniam maiores saepe. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Tenetur minima modi laborum optio quos odit molestiae facilis fugit fuga. Explicabo, ad fugiat? Magni fuga doloremque facilis, iure id excepturi dolorum! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Nostrum quaerat rerum ab adipisci eos officiis ad odio dolorum molestias natus ipsum eligendi saepe corporis magni velit laboriosam minima, quas perferendis.
+        </div>
+        <script>
+            // document.body.style.backgroundColor = prompt('background color?', ' ');
+            // document.body.style.backgroundColor = "pink";
+            let divs = document.getElementsByTagName("div");
+            let cnt = (divs.length);
+
+
+            // document.body.div.margin = `10px`;
+
+            for (let i = 1; i <= cnt; i++) {
+                document.getElementById(`div${i}`).style.margin = `10px`;
+                document.getElementById(`div${i}`).style.padding = `10px`;
+                document.getElementById(`div${i}`).style.border = `1px solid black`;
+            }
+
+            div1.onclick = func1;
+            div2.onclick = func2;
+            div3.onclick = func3;
+
+
+            document.getElementById("div5").style.backgroundColor = "grey";
+            document.getElementById("div4").style.backgroundColor = "grey";
+            document.getElementById("div3").style.backgroundColor = "red";
+            document.getElementById("div2").style.backgroundColor = "blue";
+            document.getElementById("div1").style.backgroundColor = "green";
+
+
+            function func1() {
+                document.getElementById("div1").style.backgroundColor = "lightgreen";
+                console.log("div1");
+            }
+
+            function func2() {
+                document.getElementById("div2").style.backgroundColor = "skyblue";
+                console.log("div2");
+            }
+
+            function func3() {
+                document.getElementById("div3").style.backgroundColor = "orange";
+                console.log("div3");
+            }
+
+            function func4() {
+                let col = document.getElementById("input1").value;
+                document.body.style.backgroundColor = `${col}`;
+            }
+
+            function func5() {
+                document.getElementById("div4").style.color = "red";
+            }
+
+            function func6() {
+                document.getElementById("div4").style.color = "blue";
+            }
+
+            function func7() {
+                document.getElementById("div5").style.color = "red";
+            }
+
+            function func8() {
+                document.getElementById("div5").style.color = "blue";
+            }
+
+            function fun9() {
+                document.getElementById("para").style.color = "orange";
+                document.getElementById("para").style.fontSize = "30px";
+            }
+        </script>
+</body>
+
+</html>

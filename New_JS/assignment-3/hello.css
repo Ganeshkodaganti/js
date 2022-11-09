@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #e72b1c;
+    --color2: rgb(66 103 178);
+    --color3: rgb(193, 53, 132);
+    --color4: #053eff;
+    --color5: #ea4c89;
+    --color6: rgb(29 161 242);
+    --color7: #fc4f08;
+    --color8: #0e76a8;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5% 2.5%;
+    margin-top: 2.5%;
+    justify-content: space-evenly;
+}
+
+.item {
+    position: relative;
+    align-content: space-between;
+    flex-basis: 20%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 5px grey;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 2%;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-7 {
+    padding: 10%;
+    width: 5px;
+    height: 5px;
+}
+
+.container .item:hover {
+    transform: scale(1.1);
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tick {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    border: 3px solid;
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    left: 3px;
+    bottom: 2px;
+    visibility: hidden;
+}
+
+#item-1:checked~.item-1 .tp-box,
+#item-2:checked~.item-2 .tp-box,
+#item-3:checked~.item-3 .tp-box,
+#item-4:checked~.item-4 .tp-box,
+#item-5:checked~.item-5 .tp-box,
+#item-6:checked~.item-6 .tp-box,
+#item-7:checked~.item-7 .tp-box,
+#item-8:checked~.item-8 .tp-box {
+    background: white;
+}
+
+#item-1:checked~.item-1 .tp-box i {
+    color: var(--color1);
+}
+
+#item-1:checked~.item-1>.tp-box>.custom-checkbox {
+    border: 2px solid var(--color1)
+}
+
+#item-1:checked~.item-1>.tp-box>.custom-checkbox>.tick {
+    color: var(--color1);
+    visibility: visible;
+}
+
+#item-2:checked~.item-2 .tp-box i {
+    color: var(--color2);
+}
+
+#item-2:checked~.item-2 .custom-checkbox {
+    border: 2px solid var(--color2)
+}
+
+#item-2:checked~.item-2 .tick {
+    color: var(--color2);
+    visibility: visible;
+}
+
+#item-3:checked~.item-3 .tp-box i {
+    color: var(--color3);
+}
+
+#item-3:checked~.item-3 .custom-checkbox {
+    border: 2px solid var(--color3)
+}
+
+#item-3:checked~.item-3 .tick {
+    color: var(--color3);
+    visibility: visible;
+}
+
+#item-4:checked~.item-4 .tp-box i {
+    color: var(--color4);
+}
+
+#item-4:checked~.item-4 .custom-checkbox {
+    border: 2px solid var(--color4)
+}
+
+#item-4:checked~.item-4 .tick {
+    color: var(--color4);
+    visibility: visible;
+}
+
+#item-5:checked~.item-5 .tp-box i {
+    color: var(--color5);
+}
+
+#item-5:checked~.item-5 .custom-checkbox {
+    border: 2px solid var(--color5)
+}
+
+#item-5:checked~.item-5 .tick {
+    color: var(--color5);
+    visibility: visible;
+}
+
+#item-6:checked~.item-6 .tp-box i {
+    color: var(--color6);
+}
+
+#item-6:checked~.item-6 .custom-checkbox {
+    border: 2px solid var(--color6)
+}
+
+#item-6:checked~.item-6 .tick {
+    color: var(--color6);
+    visibility: visible;
+}
+
+#item-7:checked~.item-7 .tp-box i {
+    color: var(--color7);
+}
+
+#item-7:checked~.item-7 .custom-checkbox {
+    border: 2px solid var(--color7)
+}
+
+#item-7:checked~.item-7 .tick {
+    color: var(--color7);
+    visibility: visible;
+}
+
+#item-8:checked~.item-8 .tp-box i {
+    color: var(--color8);
+}
+
+#item-8:checked~.item-8 .custom-checkbox {
+    border: 2px solid var(--color8)
+}
+
+#item-8:checked~.item-8 .tick {
+    color: var(--color8);
+    visibility: visible;
+}
+
+#item-1:checked~.item-1 .btm-box,
+.item-1 .tp-box {
+    background: var(--color1);
+    color: white;
+}
+
+#item-2:checked~.item-2 .btm-box,
+.item-2 .tp-box {
+    background: var(--color2);
+    color: white;
+}
+
+#item-3:checked~.item-3 .btm-box,
+.item-3 .tp-box {
+    background: var(--color3);
+    color: white;
+}
+
+#item-4:checked~.item-4 .btm-box,
+.item-4 .tp-box {
+    background: var(--color4);
+    color: white;
+}
+
+#item-5:checked~.item-5 .btm-box,
+.item-5 .tp-box {
+    background: var(--color5);
+    color: white;
+}
+
+#item-6:checked~.item-6 .btm-box,
+.item-6 .tp-box {
+    background: var(--color6);
+    color: white;
+}
+
+#item-7:checked~.item-7 .btm-box,
+.item-7 .tp-box {
+    background: var(--color7);
+    color: white;
+}
+
+#item-8:checked~.item-8 .btm-box,
+.item-8 .tp-box {
+    background: var(--color8);
+    color: white;
+}
+
+.tp-box i {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 5%;
+    left: 2%;
+}
+
+.pic {
+    position: absolute;
+    height: 30%;
+    left: 32%;
+    top: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.tp-box {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+}
+
+.btm-box {
+    padding-top: 10%;
+    position: absolute;
+    top: 30%;
+    height: 70%;
+    color: grey;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+p {
+    font-size: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Playball', cursive;
+}

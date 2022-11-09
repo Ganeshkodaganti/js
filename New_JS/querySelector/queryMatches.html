@@ -1,0 +1,15 @@
+<!doctype html>
+
+<body>
+    <a href="http://example.com/file.zip">...</a>
+    <a href="http://ya.ru">...</a>
+
+    <script>
+        // can be any collection instead of document.body.children
+        for (let elem of document.body.children) {
+            if (elem.matches('a[href$="file"]')) {
+                console.log("The archive reference: " + elem.href);
+            }
+        }
+    </script>
+</body>

@@ -1,0 +1,14 @@
+[{
+        "name": "Techigai",
+        "numberOfEmployees": 1000,
+        "ceo": "Joseph",
+        "rating": 3.6
+    },
+    {
+        "name": "GGK",
+        "numberOfEmployees": 3,
+        "ceo": null,
+        "rating": 4.3
+    }
+
+]

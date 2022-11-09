@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ol id="ol">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ol> -->
+    <script>
+        //creating a <div> element
+        let div = document.createElement('div');
+
+        //set it's class to alert
+        div.className = "alert";
+
+        //fill it with content
+        div.innerHTML = "Evadra vaadu!!";
+
+        /* We’ve created the element. 
+        But as of now it’s only in a variable named div,
+        not in the page yet. So we can’t see it.*/
+
+        // There’s a special method append for that:
+        document.body.append(div);
+
+
+
+        // ol.before('before'); // insert string "before" before <ol>
+        // ol.after('after'); // insert string "after" after <ol>
+
+        // let liFirst = document.createElement('li');
+
+        // liFirst.innerHTML = 'prepend';
+
+        // ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
+
+        // let liLast = document.createElement('li');
+
+        // liLast.innerHTML = 'append';
+
+        // ol.append(liLast); // insert liLast at the end of <ol>
+    </script>
+
+</body>
+
+</html>

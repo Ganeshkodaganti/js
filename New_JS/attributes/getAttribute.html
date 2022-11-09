@@ -1,0 +1,27 @@
+<!doctype html>
+
+<body>
+    <div id="elem" about="Elephant"></div>
+
+    <script>
+        console.log(elem.getAttribute('About')); // (1) 'Elephant', reading
+
+        elem.setAttribute('Test', 123); // (2), writing
+
+        console.log("checking if it has attribute Test")
+        console.log(elem.hasAttribute('Test')); // (3), see if it has attribute Test (yes)
+
+        console.log("listing all attributes")
+        for (let attr of elem.attributes) { // (4) list all
+            console.log(`${attr.name} = ${attr.value}`);
+        }
+        elem.removeAttribute("about"); //(5) removing attribute
+
+        console.log("listing all attributes after removing")
+        for (let attr of elem.attributes) { // (6) list all after removing
+            console.log(`${attr.name} = ${attr.value}`);
+        }
+
+        //.attributes is collection of all attributes
+    </script>
+</body>

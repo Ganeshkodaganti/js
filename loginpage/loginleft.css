@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.main .left {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: rgb(44, 4, 44);
+    height: 100vh;
+    width: 50%;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .left .appname {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main .left .parent {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: rgb(204, 79, 20);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 0;
+}
+
+
+/*app  name styling*/
+
+.main .left .appname .apptitle {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    /* font-family: serif; */
+}
+
+
+/* app name description styling */
+
+.main .left .appname .appdesc {
+    color: white;
+    /* font-family: serif; */
+    font-size: 1rem;
+}
+
+.main .left .parent .img2 {
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: 10%;
+    border-radius: 20px;
+}
+
+.main .left .parent .img1 {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    top: 0%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.social img {
+    width: 10%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-right: 20px;
+}

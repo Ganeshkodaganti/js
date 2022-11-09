@@ -1,0 +1,33 @@
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.chessboard {
+    height: min(100vh, 100vw);
+    width: min(100vh, 100vw);
+    margin: min(1vh, 1vw);
+    border: min(2vh, 2vw) solid #333;
+}
+
+.chessboard div:nth-of-type(odd) .colour:nth-of-type(odd),
+.chessboard div:nth-of-type(even) .colour:nth-of-type(even) {
+    width: calc(min(98vh, 98vw)/8);
+    height: calc(min(98vh, 98vw)/8);
+    font-size: min(10vh, 10vw);
+    background-color: #fff;
+}
+
+.chessboard div:nth-of-type(odd) .colour:nth-of-type(even),
+.chessboard div:nth-of-type(even) .colour:nth-of-type(odd) {
+    width: calc(min(98vh, 98vw)/8);
+    height: calc(min(98vh, 98vw)/8);
+    /* text-align: center; */
+    font-size: min(10vh, 10vw);
+    background-color: #999;
+}
+
+.chessboard div {
+    text-align: center;
+    float: left;
+}

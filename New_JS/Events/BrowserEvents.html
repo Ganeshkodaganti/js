@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input id="but" type="button" value="Call Alert">
+    <input type="button" onclick="func()" value="Call Func">
+
+    <script>
+        function func() {
+            for (let i = 1; i <= 3; i++) {
+                console.log("LISTEN :" + i);
+            }
+        }
+
+        //DOM property
+        but.onclick = function() {
+            alert("Hai mowa!")
+        };
+        //but.onclick = func;
+    </script>
+</body>
+
+</html>

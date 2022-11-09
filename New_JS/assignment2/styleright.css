@@ -1,0 +1,129 @@
+.righthand {
+    padding: 0 10%;
+}
+
+.line {
+    position: relative;
+    top: -20px;
+    left: 40%;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.pass-label {
+    font-size: 0.7rem;
+    flex-basis: 20%;
+}
+
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    border: none;
+    background: none;
+    flex-basis: 70%;
+    outline: none;
+}
+
+.op-1,
+.op-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.glogo {
+    width: 35px;
+}
+
+.fblogo {
+    width: 40px;
+}
+
+.op {
+    flex-basis: 100%;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgb(230, 227, 227);
+}
+
+.remember,
+.forgot {
+    display: inline;
+}
+
+.email,
+.password {
+    height: 85%;
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label {
+    font-size: 0.7rem;
+    flex-basis: 20%;
+}
+
+.mail {
+    margin-bottom: 5%;
+}
+
+.details-form {
+    height: 40%;
+}
+
+.mail,
+.pass {
+    display: flex;
+    align-items: center;
+    color: #333;
+    height: 20%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.pass {
+    margin-bottom: 3%;
+}
+
+[type="checkbox"] {
+    border: none;
+    background-color: grey;
+}
+
+input[value="LOGIN"] {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    border: 0;
+    color: white;
+    background-color: rgba(251, 106, 54, 0.814);
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.reg {
+    color: grey;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forgot {
+    color: grey;
+}
+
+.register {
+    margin-top: 7%;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

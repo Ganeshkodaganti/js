@@ -1,0 +1,75 @@
+@media(min-width:500px) {
+    .container-1 {
+        display: inline-flex;
+        /*
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items: center;
+    */
+        /*
+    to flex things horizantlly 
+    flex-direction:column;
+    vertical:
+    flex-direction:column;
+    */
+    }
+    .container-2 {
+        display: flex;
+        /* justify-content:space-between; */
+        /*
+    justify-content:space-around;
+    justify-content:flex-start;
+    justify-content:flex-end;
+    justify-content:center;
+    justify-content:space-between;
+    */
+    }
+    .container-3 {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content:space-between; */
+    }
+}
+
+.container-2-box {
+    flex-basis: 27%;
+    /*works same as width but flex*/
+}
+
+.container-3-box {
+    flex-basis: 12%;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.box1 {
+    flex: 1;
+    /*to change order without modifying html source code
+      order:2;  
+      */
+}
+
+.box2 {
+    flex: 1;
+}
+
+.box3 {
+    flex: 1;
+}
+
+.box4 {
+    flex: 1;
+}
+
+.box5 {
+    flex: 1;
+}
+
+.box6 {
+    flex: 1;
+}

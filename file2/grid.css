@@ -1,0 +1,80 @@
+.main {
+    --aside-height: calc(100vh - 30vh);
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.head {
+    border: 3px solid black;
+    height: 10vh;
+    width: 100vw;
+    background-color: cadetblue;
+}
+
+.navbar {
+    /* margin: 1% 0; */
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    height: 10vh;
+    width: 100vw;
+    /* background-color: coral; */
+}
+
+.navitem {
+    list-style-type: none;
+}
+
+.navcolor1 {
+    background-color: violet;
+}
+
+.navcolor2 {
+    background-color: olive;
+}
+
+.navcolor3 {
+    background-color: blueviolet;
+}
+
+.aside1 {
+    border: 3px solid black;
+    height: var(--aside-height);
+    background-color: cornflowerblue;
+}
+
+.content {
+    border: 3px solid black;
+    height: var(--aside-height);
+    background-color: darkkhaki;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+    border: 3px solid black;
+}
+
+.aside2 {
+    border: 3px solid black;
+    height: var(--aside-height);
+    background-color: darkmagenta;
+}
+
+.foot {
+    border: 3px solid black;
+    /* position: relative;
+    top: 10px; */
+    /* margin-top: 1%; */
+    height: 10vh;
+    width: 100vw;
+    background-color: lavender;
+}

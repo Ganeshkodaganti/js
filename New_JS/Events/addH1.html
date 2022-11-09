@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="headcont"> this file doesn't contain header,now.</div>
+    <input id="h1" type="button" value="Gimme header">
+
+    <script>
+        // let i = 0;
+
+        function addH1() {
+            //i++;
+            //creating a header element
+            let h = document.createElement('h1');
+
+            // set it's class to header1
+            // h.className = "header1";
+
+            //fill it with content
+            h.innerHTML = `Header on click`;
+
+            document.body.before(h);
+
+            document.getElementById("headcont").innerHTML = "New Header has been added";
+
+            h1.hidden = true;
+        }
+
+        function randomcolor() {
+            return Math.random() * 255;
+        }
+
+        // h1.onclick = addH1;
+
+        h1.addEventListener("click", addH1, {
+            once: true
+        });
+    </script>
+
+
+</body>
+
+</html>

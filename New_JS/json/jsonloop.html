@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Create a JSON string from a JavaScript array.</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+    <script>
+        const obj = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        let cnt = 0;
+        const myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+
+        const myJSON1 = JSON.parse(myJSON);
+        for (let n in myJSON1) {
+            cnt++;
+            document.getElementById(`demo${cnt}`).innerHTML = (`${n} : ${myJSON1[n]}`);
+        };
+    </script>
+
+</body>
+
+</html>
