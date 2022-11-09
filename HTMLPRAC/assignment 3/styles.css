@@ -1,0 +1,227 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 35px;
+}
+
+.cards {
+    text-align: center;
+    padding: 0px;
+    height: 320px;
+    width: 250px;
+    margin: 20px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 3px;
+}
+
+.container .cards:hover {
+    transform: scale(1.1);
+}
+
+.upper {
+    position: inherit;
+    height: 30%;
+    width: 100%;
+}
+
+.lower {
+    height: 70%;
+    width: 100%;
+}
+
+#oneid:checked~.upper .pinterest {
+    content: url(pinterestRed.svg);
+}
+
+#twoid:checked~.upper .facebook {
+    content: url(facebookBlue.svg);
+}
+
+#threeid:checked~.upper .instagram {
+    content: url(instagramPink.svg);
+}
+
+#fourid:checked~.upper .behance {
+    content: url(behanceBlue.svg);
+}
+
+#fiveid:checked~.upper .dribble {
+    content: url(dribblePink.svg);
+}
+
+#sixid:checked~.upper .twitter {
+    content: url(twitterBlue.svg);
+}
+
+#sevenid:checked~.upper .blogger {
+    content: url(bloggerOrange.svg);
+}
+
+#eightid:checked~.upper .linkedin {
+    content: url(linkedinBlue.svg);
+}
+
+.pinterest {
+    content: url(Whitepinterest.svg);
+}
+
+.facebook {
+    content: url(Whitefacebook.svg);
+}
+
+.instagram {
+    content: url(WhiteInstagram.svg);
+}
+
+.behance {
+    content: url(Whitebehance.svg);
+}
+
+.dribble {
+    content: url(Whitedribble.svg);
+}
+
+.twitter {
+    content: url(whiteTwitter.svg);
+}
+
+.blogger {
+    content: url(blogger-159.svg);
+}
+
+.linkedin {
+    content: url(Whitelinkedin.svg);
+}
+
+.one .upper,
+#oneid:checked~.lower {
+    background-color: rgb(230, 0, 35);
+}
+
+.two .upper,
+#twoid:checked~.lower {
+    background-color: rgb(59, 89, 152);
+}
+
+.three .upper,
+#threeid:checked~.lower {
+    background-color: rgb(225, 48, 108);
+}
+
+.four .upper,
+#fourid:checked~.lower {
+    background-color: rgb(5, 62, 255);
+}
+
+.five .upper,
+#fiveid:checked~.lower {
+    background-color: rgb(234, 76, 137);
+}
+
+.six .upper,
+#sixid:checked~.lower {
+    background-color: rgb(29, 161, 242);
+}
+
+.seven .upper,
+#sevenid:checked~.lower {
+    background-color: rgb(252, 79, 8);
+}
+
+.eight .upper,
+#eightid:checked~.lower {
+    background-color: rgb(0, 119, 181);
+}
+
+.picture {
+    position: relative;
+    border: 4px solid white;
+    /* box-shadow: 0px 0px 1px 1px gray; */
+    /* left: 35%;
+    top: -10%; */
+    left: 85px;
+    top: -45px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url('images.jpg');
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    float: right;
+    background-color: inherit;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+
+input.checkbox {
+    width: 20px;
+    background-color: inherit;
+    height: 20px;
+    position: relative;
+}
+
+#oneid:checked~.upper,
+#twoid:checked~.upper,
+#threeid:checked~.upper,
+#fourid:checked~.upper,
+#fiveid:checked~.upper,
+#sixid:checked~.upper,
+#sevenid:checked~.upper,
+#eightid:checked~.upper {
+    background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Playball&display=swap');
+.name {
+    position: relative;
+    top: -50px;
+    font-family: 'Playball', cursive;
+    font-size: large;
+}
+
+.description {
+    position: relative;
+    top: -50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: small;
+}
+
+.social {
+    position: relative;
+    top: -30px;
+    height: 30px;
+    /* left: 15px; */
+}
+
+.image1 {
+    color: gray;
+    content: url("twitterBlue.svg");
+}
+
+.image2 {
+    content: url("Whitelinkedin.svg");
+}
+
+.image3 {
+    content: url("Whitedribble.svg");
+}
+
+.image4 {
+    content: url("WhiteInstagram.svg");
+}
+
+.image5 {
+    content: url("Whitebehance.svg");
+}
